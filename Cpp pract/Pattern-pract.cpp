@@ -2,6 +2,40 @@
 
 using namespace std;
 
+void Pattern_17(){
+  int n=5;
+  char ch;
+
+  for(int i=1; i<=n; i++){
+    ch='A';
+    for(int j=0; j<n-i; j++){
+      cout<<"  ";
+    }
+    for(int k=0; k<i; k++){
+      cout<<ch<<" ";
+      ch++;
+    }
+    ch--;
+    for(int l=0; l<i-1; l++){
+      ch--;
+      cout<<ch<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+void Pattern_16(){
+  int n=5;
+  char ch='A';
+
+  for(int i=1; i<=n; i++){
+    for(int j=0;j<i;j++){
+      cout<<ch<<" ";
+    }ch++;
+    cout<<endl;
+  }
+}
+
 void Pattern_15(){
   int n=5;
   char ch;
@@ -194,6 +228,6 @@ void Pattern_1(){
   }
 }
 int main(){
-  Pattern_15();
+  Pattern_17();
   return 0;
 }
