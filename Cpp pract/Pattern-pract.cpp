@@ -2,6 +2,78 @@
 
 using namespace std;
 
+void Pattern_20(){
+  int n=5;
+  for(int i=1; i<=n; i++){
+    for(int j=0; j<i; j++){
+      cout<<"* ";
+    }
+    for(int k=0; k<2*(n-i); k++){
+      cout<<"  ";
+    }
+    for(int l=0; l<i; l++){
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
+  for(int i=1; i<n; i++){
+    for(int j=0; j<n-i; j++){
+      cout<<"* ";
+    }
+    for(int k=0; k<2*i; k++){
+      cout<<"  ";
+    }
+    for(int l=0; l<n-i; l++){
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
+}
+
+void Pattern_19(){
+  int n=5;
+  for(int i=0;i<n;i++){
+    for(int j=0; j<n-i; j++){
+      cout<<"* ";
+    }
+    for(int k=0; k<2*i; k++){
+      cout << "  ";
+    }
+    for(int j=0; j<n-i; j++){
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
+
+  for(int i=n-1;i>0; i--){
+    for(int j=0;j<n-i;j++){
+      cout<<"* ";
+    }
+    for(int k=0;k<2*i;k++){
+      cout<<"  ";
+    }
+    for(int l=0; l<n-i;l++){
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
+}
+
+void Pattern_18(){
+  char ch;
+  int n = 5;
+
+  for(int i=1; i<=n; i++){
+    ch='A';
+    ch+=(5-i);
+    for(int j=0; j<i; j++){
+      cout<<ch<<" ";
+      ch++;
+    }
+    cout<<endl;
+  }
+}
+
 void Pattern_17(){
   int n=5;
   char ch;
@@ -228,6 +300,6 @@ void Pattern_1(){
   }
 }
 int main(){
-  Pattern_17();
+  Pattern_20();
   return 0;
 }
